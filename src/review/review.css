@@ -1,0 +1,172 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@300&display=swap');
+
+:root {
+    --signatur-color: #6ACB6E;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    max-width: 1300px;
+    position: sticky;
+}
+
+.logo-a {
+    width: fit-content;
+    height: 100%;
+}
+
+.logo {
+    transform: scale(0.5);
+    overflow-clip-margin: border-box;
+    display: block;
+    margin: 0;
+}
+
+.nav-bar {
+    height: fit-content;
+    margin: auto 0;
+}
+
+.nav-ul {
+    height: fit-content;
+    margin: 0;
+}
+
+.nav-li {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.nav-li a:hover {
+    cursor: pointer;
+    color: var(--signatur-color);
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.btn-contact {
+    height: min-content;
+    margin: auto 0;
+    width: max-content;
+    padding: 0.5rem;
+    background-color: var(--signatur-color);
+    border-radius: 20px;
+    margin-right: 3rem;
+}
+
+.btn-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+main {
+    width: 80%;
+    max-width: 1300px;
+    margin: auto;
+}
+
+main .header {
+    width: 80%;
+    max-width: 1300px;
+    margin: auto;
+    margin-top: 1.2rem;
+    font-size: 3.3rem;
+    color: black;
+}
+
+.all {
+    font-size: 3.3rem;
+    color: var(--signatur-color);
+}
+
+.types-ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.types-li {
+    font-size: 0.8rem;
+    background-color: white;
+    margin-right: 1rem;
+    margin-top: 1rem;
+    padding: 0.5rem;
+    border: 2px solid var(--signatur-color);
+    border-radius: 15px;
+    color: var(--signatur-color);
+}
+
+.types-li:hover {
+    cursor: pointer;
+}
+
+.selected {
+    color: white;
+    background-color: var(--signatur-color);
+}
+
+.expenses {
+    margin-top: 2rem;
+}
+
+.expenses .expense {
+    border-bottom: 2px dotted var(--signatur-color);
+    margin-bottom: 1.5rem;
+} 
+
+.expense p {
+    width: fit-content;
+}
+
+.expenses .total {
+    font-size: 3.3rem;
+    color: var(--signatur-color);
+}
+
+.type {
+    font-size: 2rem;
+    display: inline-block;
+    margin-left: 1rem;
+}
+
+.cost {
+    float: right;
+    font-size: 3rem;
+    margin-right: 1rem;
+}
+
+.time {
+    color: var(--signatur-color);
+    margin-left: 1rem;
+}
+
+.unique-id {
+    margin-left: 1rem;
+}

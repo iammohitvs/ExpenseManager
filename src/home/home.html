@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Home | Expense Manager</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="home.css">
+    </head>
+    <body>
+        <header>
+            <a href="home.html" class="logo-a">
+                <img src="../images/Expense Manager (1).png" alt="expense-manager-logo" class="logo" >
+            </a>
+            <nav class="nav-bar">
+            <ul class="nav-ul">
+                <li class="nav-li">
+                    <a href="home.html">Home</a>
+                </li>
+                <li class="nav-li">
+                    <a href="../review/review.html">Review All Expenses</a>
+                </li>
+            </ul>
+            </nav>
+            <button type="button" class="btn-contact"><a href="../contact/contact.html" target="_blank" rel="noopener noreferrer">Contact</a></button>
+        </header>
+        <main>
+            <div class="balance">
+                <p class="header">You're Current Balance</p>
+                <p class="money">₹ 0</p>
+            </div>
+            <div class="transactions">
+                <div class="expenses">
+                    <p class="header">You're Expenses</p>
+                    <ul>
+                    </ul>
+                    <a href="../review/review.html">View all expenses -></a>
+                    <form action="" class="form">
+                        <label class="header">Add Expense</label> <br>
+                        <input type="number" class="number" placeholder="eg: 75"><br>
+                        <input type="text" class="type" placeholder="eg: food">
+                        <button type="submit" class="btn-add" id="expense">ADD</button>
+                    </form>
+                </div>
+                <div class="deposits">
+                    <p class="header">You're Deposits</p>
+                    <ul>
+                    </ul>
+                        <form action="" class="form">
+                        <label class="header">Add Deposit</label> <br>
+                        <input type="number" class="number" placeholder="eg: 50000"><br>
+                        <input type="text" class="type" placeholder="eg: salary">
+                        <button type="submit" class="btn-add" id="deposit">ADD</button>
+                    </form>
+                </div>
+            </div>
+        </main>
+        <script src="home.js" async defer type="module"></script>
+    </body>
+</html>

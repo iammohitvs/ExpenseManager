@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Kanit:wght@300&display=swap');
+
+:root {
+    --signatur-color: #6ACB6E;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-family: 'Kanit', sans-serif;
+    font-size: 20px;
+    list-style-type: none;
+}
+
+body a {
+    text-decoration: none;
+    color: black;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    height: 80px;
+    margin: auto;
+    max-width: 1300px;
+    position: sticky;
+}
+
+.logo-a {
+    width: fit-content;
+    height: 100%;
+}
+
+.logo {
+    transform: scale(0.5);
+    overflow-clip-margin: border-box;
+    display: block;
+    margin: 0;
+}
+
+.nav-bar {
+    height: fit-content;
+    margin: auto 0;
+}
+
+.nav-ul {
+    height: fit-content;
+    margin: 0;
+}
+
+.nav-li {
+    display: inline-block;
+    margin-right: 2rem;
+}
+
+.nav-li a:hover {
+    cursor: pointer;
+    color: var(--signatur-color);
+}
+
+.logo:hover {
+    cursor: pointer;
+}
+
+.btn-contact {
+    height: min-content;
+    margin: auto 0;
+    width: max-content;
+    padding: 0.5rem;
+    background-color: var(--signatur-color);
+    border-radius: 20px;
+    margin-right: 3rem;
+}
+
+.btn-contact a {
+    color: white;
+    text-decoration: none;
+}
+
+.balance {
+    width: fit-content;
+    margin: auto;
+    margin-top: 6%;
+    margin-bottom: 6%;
+}
+
+.balance .header {
+    font-size: 2.3rem;
+}
+
+.balance .money {
+    font-size: 3.4rem;
+    color: var(--signatur-color);
+    width: fit-content;
+    margin: auto;
+}
+
+.transactions {
+    width: 80%;
+    max-width: 1300px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+}
+
+.expenses, .deposits {
+    width: fit-content;
+}
+
+.transactions .header {
+    font-size: 1.5rem;
+    margin-bottom: 0.6rem;
+}
+
+.transactions ul {
+    width: 100%;
+    text-align: center;
+    margin: auto;
+}
+
+.transactions li {
+    margin-bottom: 0.5rem;
+    border-bottom: 1px solid grey;
+}
+
+.transactions a {
+    color: var(--signatur-color);
+}
+
+.expenses p.header, .deposits p.header {
+    width: 100%;
+    text-align: center;
+    text-decoration: underline ;
+    text-decoration-color: var(--signatur-color);
+    text-decoration-style: dotted;
+}
+
+.form {
+    margin-top: 2rem;
+}
+
+.form input {
+    border: 2px solid var(--signatur-color);
+    border-radius: 5px;
+    color: var(--signatur-color);
+    padding: 0.4rem;
+    margin-top: 1rem;
+    margin-bottom: 0.6rem;
+    width: 100%;
+}
+
+.btn-add {
+    margin-top: 1.3rem;
+    background-color: var(--signatur-color);
+    padding: 2px;
+    color: white;
+    border-radius: 5px;
+    width: 100%;
+
+}
+
+.btn-add:hover {
+    cursor: pointer;
+}
